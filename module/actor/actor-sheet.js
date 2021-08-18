@@ -72,11 +72,11 @@ export class BlackVoidActorSheet extends ActorSheet {
 
     // Determine if character should have Attributes, Powers, Both, or Neither
     data.backgrounds.forEach(background => {
-      if (background.name == "Voidmarked") {
+      if (background.name === "Voidmarked") {
         data.hasAttributes = true;
         data.hasEsotericAttributes = true;
         data.hasPowers = true;
-      } else if (background.name == "Halfblood") {
+      } else if (background.name === "Halfblood") {
         data.hasAttributes = true;
       }
     });
@@ -102,7 +102,7 @@ export class BlackVoidActorSheet extends ActorSheet {
     let hpFactor = 6;
     
     data.characterattributes.forEach(attribute => {
-      if (attribute.name == "Large") { defenceBase = 6; sizeFactor = 6; hpFactor = 7; }
+      if (attribute.name === "Large") { defenceBase = 6; sizeFactor = 6; hpFactor = 7; }
     })
 
     let shieldBonus = 0;
@@ -114,7 +114,7 @@ export class BlackVoidActorSheet extends ActorSheet {
     let skillBonus = 0;
 
     data.combatskills.forEach(skill => {
-      if (skill.name == "Defence") skillBonus += skill.data.ranks;
+      if (skill.name === "Defence") skillBonus += skill.data.ranks;
     });
 
     data.defenceValue = defenceBase + shieldBonus + skillBonus + data.data.abilities.agi.mod;
