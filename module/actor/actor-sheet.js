@@ -26,22 +26,22 @@ export class BlackVoidActorSheet extends ActorSheet {
     }
 
     // Extract object types
-    data.backgrounds = data.items.filter((item) => { return item.type == "background" });
-    data.skills = data.items.filter((item) => { return item.type == "skill" });
-    data.combatskills = data.items.filter((item) => { return item.type == "combatskill" });
-    data.characterattributes = data.items.filter((item) => { return item.type == "attribute" });
-    data.esotericattributes = data.items.filter((item) => { return item.type == "esotericattribute" });
-    data.talents = data.items.filter((item) => { return item.type == "talent" });
-    data.flaws = data.items.filter((item) => { return item.type == "flaw" });
-    data.generalitems = data.items.filter((item) => { return item.type == "item"});
-    data.tools = data.items.filter((item) => { return item.type == "tool" });
-    data.weapons = data.items.filter((item) => { return item.type == "weapon" });
-    data.armour = data.items.filter((item) => { return item.type == "armour" });
-    data.shields = data.items.filter((item) => { return item.type == "shield" });
-    data.consumables = data.items.filter((item) => { return item.type == "consumable" });
-    data.methods = data.items.filter((item) => { return item.type == "method" });
-    data.spheres = data.items.filter((item) => { return item.type == "sphere" });
-    data.phenomena = data.items.filter((item) => { return item.type == "phenomenon" });
+    data.backgrounds = data.items.filter((item) => { return item.type === "background" });
+    data.skills = data.items.filter((item) => { return item.type === "skill" });
+    data.combatskills = data.items.filter((item) => { return item.type === "combatskill" });
+    data.characterattributes = data.items.filter((item) => { return item.type === "attribute" });
+    data.esotericattributes = data.items.filter((item) => { return item.type === "esotericattribute" });
+    data.talents = data.items.filter((item) => { return item.type === "talent" });
+    data.flaws = data.items.filter((item) => { return item.type === "flaw" });
+    data.generalitems = data.items.filter((item) => { return item.type === "item"});
+    data.tools = data.items.filter((item) => { return item.type === "tool" });
+    data.weapons = data.items.filter((item) => { return item.type === "weapon" });
+    data.armour = data.items.filter((item) => { return item.type === "armour" });
+    data.shields = data.items.filter((item) => { return item.type === "shield" });
+    data.consumables = data.items.filter((item) => { return item.type === "consumable" });
+    data.methods = data.items.filter((item) => { return item.type === "method" });
+    data.spheres = data.items.filter((item) => { return item.type === "sphere" });
+    data.phenomena = data.items.filter((item) => { return item.type === "phenomenon" });
 
     // Extract boolean values
     data.hasAttributes = false;
